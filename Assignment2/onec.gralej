@@ -1,0 +1,46 @@
+<'fred feeds the dog with biscuits'
+{ :'npsg_vpsg__s:fred feeds the dog with biscuits'
+    s
+    { :'lexicon:fred'
+        np(
+            number: sg,
+            type: prp)
+    }
+    { :'v_np_pp__vp:feeds the dog with biscuits'
+        vp(
+            number: $2 = sg)
+        { :'lexicon:feeds'
+            v(
+                number: $2)
+        }
+        { :'det_n__np:the dog'
+            np(
+                number: $6 = sg,
+                type: not_prp)
+            { :'lexicon:the'
+                det
+            }
+            { :'lexicon:dog'
+                n(
+                    number: $6)
+            }
+        }
+        { :'p_np__pp:with biscuits'
+            pp
+            { :'lexicon:with'
+                p
+            }
+            { :'nppl__np:biscuits'
+                np(
+                    number: pl,
+                    type: not_prp)
+                { :'lexicon:biscuits'
+                    n(
+                        number: pl)
+                }
+            }
+        }
+    }
+}
+>
+

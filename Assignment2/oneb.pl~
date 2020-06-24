@@ -1,0 +1,57 @@
+% Heng Liu, liuheng7, 1004076493
+
+% grammar rule
+bot sub [s, vp, pp, np, v, p, det, n].
+    s sub [].
+    vp sub [].
+    pp sub [].
+    np sub [].
+    v sub [].
+    p sub [].
+    det sub [].
+    n sub [].
+    has_number sub [v, n] intro [number:num].
+
+    number sub [sg, pl].
+    type sub [reg, prp].
+
+% grammar rules
+s__np_vp rule
+s ===> 
+cat> np,
+cat> vp.
+
+vp__v_np rule
+vp ===> 
+cat> v,
+cat> np.
+
+vp__v_np_pp rule
+vp ===> 
+cat> v,
+cat> np,
+cat> np.
+
+pp__p_np rule
+pp ===>
+cat> p,
+cat> np.
+
+np__n rule
+np ===>
+cat> n.
+
+np__det_n rule
+np ===>
+cat> det,
+cat> n.
+
+% lexical entry
+biscuits ---> (n, number:pl).
+dog ---> (n, number:sg).
+feed ---> v.
+feeds ---> v.
+fred ---> (np, number:sg).
+the ---> det.
+puppies ---> n.
+with ---> p.

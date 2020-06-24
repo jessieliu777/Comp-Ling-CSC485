@@ -1,0 +1,30 @@
+% Heng Liu, liuheng7, 1004076493
+
+i. tended
+agent: the student
+theme: to sleep
+
+sleep
+experiencer: the student
+
+ii. appeared
+theme: the student
+
+sleep
+experiencer: the student
+
+iii. promised
+agent: the student
+theme: the teacher to sleep
+beneficiary: the teacher
+
+sleep
+experiencer: the student
+
+iv. requested
+agent: the student
+theme: the teacher to sleep
+beneficiary: the teacher
+
+sleep
+experiencer: the teacher

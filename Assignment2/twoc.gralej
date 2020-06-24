@@ -1,0 +1,59 @@
+<'the student appeared to sleep'
+{ :'np_vp__s:the student appeared to sleep'
+    s(
+        mood: $4 = indicative(
+            tense: $8 = past),
+        part: $5 = part(
+            main: not_request,
+            obj1: cat,
+            obj2: cat,
+            subj: $0 = np(
+                nsem: $2 = student)),
+        vsem: $6 = appear(
+            agent: none,
+            beneficiary: none,
+            experiencer: none,
+            theme: $0))
+    { :'det_n__np:the student'
+        np(
+            nsem: $2)
+        { :'lexicon:the'
+            det
+        }
+        { :'lexicon:student'
+            n(
+                nsem: $2)
+        }
+    }
+    { :'appear__vp:appeared to sleep'
+        vp(
+            mood: $4,
+            part: $5,
+            vsem: $6)
+        { :'lexicon:appeared'
+            v(
+                vsem: $6,
+                vtense: $8)
+        }
+        { :'request_sleep__inf_clause:to sleep'
+            inf_clause(
+                mood: infinitive,
+                part: $5,
+                vsem: $12 = sleep(
+                    agent: none,
+                    beneficiary: none,
+                    experiencer: $0,
+                    theme: none))
+            { :'lexicon:to'
+                toinf
+            }
+            { :'lexicon:sleep'
+                v(
+                    vsem: $12,
+                    vtense: present)
+            }
+        }
+    }
+}
+>
+
